@@ -59,7 +59,7 @@ app.post("/upload", upload.single("file"), (req, res) => {
   
   // Si todo salió bien, retorna un objeto JSON con los metadatos de acceso público del archivo
   res.json({
-    url: "http://localhost:3003/uploads/" + req.file.filename, // Enlace para ver/descargar el archivo
+    url: "https://whatsapprec-one.vercel.app/uploads/" + req.file.filename, // Enlace para ver/descargar el archivo
     filename: req.file.originalname,                           // Nombre original del archivo adjuntado
     mimetype: req.file.mimetype,                               // Tipo de archivo (ej: image/png)
     size: req.file.size                                         // Tamaño expresado en bytes
