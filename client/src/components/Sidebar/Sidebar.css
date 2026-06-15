@@ -1,0 +1,102 @@
+.sidebar {
+  width: 300px;
+  background-color: #202c33;
+  border-right: 1px solid #2a373f;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-shrink: 0;
+}
+.sidebar-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: #2a373f;
+  border-bottom: 1px solid #111b21;
+}
+.mi-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111b21;
+}
+.mi-nombre { font-weight: bold; color: white; }
+.mi-estado { font-size: 12px; color: #8696a0; }
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #2a373f;
+}
+.tab {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #8696a0;
+  cursor: pointer;
+  font-size: 13px;
+  border-bottom: 2px solid transparent;
+}
+.tab.activo {
+  color: #00a884;
+  border-bottom: 2px solid #00a884;
+}
+.lista-salas { flex: 1; overflow-y: auto; }
+.sala-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #2a373f;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sala-item:hover { background-color: #2a373f; }
+.sala-item.activo { background-color: #2a373f; }
+.sala-info { flex: 1; }
+.sala-nombre { color: white; font-size: 14px; font-weight: bold; }
+.sala-desc { color: #8696a0; font-size: 12px; margin-top: 2px; }
+.btn-salir {
+  padding: 4px 10px;
+  background: none;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn-salir:hover { background: #ef4444; color: white; }
+.lista-usuarios { flex: 1; overflow-y: auto; }
+.sin-usuarios {
+  padding: 20px;
+  color: #8696a0;
+  font-size: 13px;
+  text-align: center;
+}
+.usuario-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #2a373f;
+}
+.usuario-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111b21;
+}
+.usuario-nombre { color: white; font-size: 14px; }
+.usuario-estado { color: #8696a0; font-size: 12px; }
+.punto-verde { color: #25d366; margin-left: auto; font-size: 12px; }
+.usuario-item {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.usuario-item:hover {
+  background-color: #2a373f;
+}
+.usuario-item.activo {
+  background-color: #2a373f;
+  border-left: 3px solid #00a884;
+}

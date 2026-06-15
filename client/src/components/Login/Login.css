@@ -1,0 +1,74 @@
+.login-fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111b21;
+}
+
+.login-caja {
+  background-color: #202c33;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.login-caja h1 {
+  color: #00a884;
+}
+
+.login-caja input,
+.login-caja select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #2a373f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.login-caja button {
+  padding: 12px;
+  background-color: #00a884;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-caja button:hover {
+  background-color: #008069;
+}
+
+.avatares-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.avatar-normal {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: #111b21;
+}
+
+.avatar-sel {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #00a884;
+  background: #111b21;
+}
