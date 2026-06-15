@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react"
 import "./Chat.css"
 
 // Dirección base del backend para realizar las peticiones HTTP de subida de archivos
-const SERVER_URL = "http://192.168.1.95:3003"
+const SERVER_URL = "https://whatsapprec-one.vercel.app"
 
 // Declara el componente pasándole de forma desestructurada todas las propiedades (props)
 function Chat({ mensajes, onEnviar, onEscribir, onParar, escribiendo, usuarioActual, socketId, salaActiva }) {
